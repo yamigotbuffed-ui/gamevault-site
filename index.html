@@ -152,6 +152,16 @@ footer .wrap{display:grid;gap:6px}
   html{scroll-behavior:auto}
   *{transition:none!important}
 }
+.ready{max-width:640px;background:#0d0d0e;border:1px solid var(--line);border-left:4px solid var(--red);padding:20px 22px;margin-bottom:44px}
+.ready h3,.golden h3{font-size:1.2rem;margin:0 0 12px}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ticks li{position:relative;padding-left:22px;color:var(--muted)}
+.ticks li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;background:var(--red);transform:rotate(45deg)}
+.ticks b{color:var(--text);font-weight:600}
+.steps.short li{padding-bottom:24px}
+.steps.short li:last-child{padding-bottom:0}
+.steps.short p{color:var(--text);padding-top:7px}
+.golden{max-width:640px;margin-top:44px;padding-top:28px;border-top:1px solid var(--red-dim)}
 </style>
 </head>
 <body>
@@ -208,25 +218,33 @@ footer .wrap{display:grid;gap:6px}
 
   <section class="section" id="how">
     <div class="wrap">
-      <h2>How a deal works</h2>
-      <ol class="steps">
-        <li>
-          <h3>Message us</h3>
-          <p>Send @Officialgamevault_MM the price and account details you both agreed on.</p>
-        </li>
-        <li>
-          <h3>Buyer pays us</h3>
-          <p>We confirm the payment in the bank before anything else happens.</p>
-        </li>
-        <li>
-          <h3>Seller hands over the account</h3>
-          <p>Only after we tell them the money is secured.</p>
-        </li>
-        <li>
-          <h3>Buyer checks and confirms</h3>
-          <p>The buyer has under 30 minutes to check the account. Once they confirm, we pay the seller.</p>
-        </li>
+      <h2>How to make a deal</h2>
+      <div class="ready">
+        <h3>Before you message us, have ready</h3>
+        <ul class="ticks">
+          <li>The other person's Telegram username</li>
+          <li>The price you agreed, in ₦</li>
+          <li>What the account has (level, skins, what it's linked to)</li>
+          <li>Whether you're buying or selling</li>
+        </ul>
+      </div>
+      <ol class="steps short">
+        <li><p>Agree on the price and the account with the other person.</p></li>
+        <li><p>Message @Officialgamevault_MM. We'll confirm the deal with both of you.</p></li>
+        <li><p>Buyer pays us, only to the details we give you on Telegram.</p></li>
+        <li><p>We check the payment, then tell the seller to go ahead.</p></li>
+        <li><p>Seller gives the buyer the account.</p></li>
+        <li><p>Buyer checks it (under 30 minutes) and confirms.</p></li>
+        <li><p>We pay the seller. Done.</p></li>
       </ol>
+      <div class="golden">
+        <h3>Rules</h3>
+        <ul class="ticks">
+          <li><b>Buyers:</b> check the account before you confirm.</li>
+          <li><b>Sellers:</b> wait until we say the payment is secured.</li>
+          <li>Only trust @Officialgamevault_MM.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
